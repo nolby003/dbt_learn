@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: customers
+    description: "Customer table"
+    columns:
+      - name: customer_id
+        description: 'Customer ID'
+        tests:
+          - unique
+      - name: customer_fname
+        description: 'Customer First Name'
+      - name: customer_lname
+        description: 'Customer last name'
+      - name: customer_sal
+        description: 'Customer Salutation'
+      - name: customer_email
+        description: 'Customer Email'
+        tests:
+          - unique
+sources:
+  - name: dev
+    database: dev
+    schema: staging
+    tables:
+      - name: customers

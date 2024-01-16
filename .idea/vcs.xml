@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dbt-tutorial-course" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/https:/github.com/nolby003/dbt_learn.git" vcs="Git" />
+  </component>
+</project>

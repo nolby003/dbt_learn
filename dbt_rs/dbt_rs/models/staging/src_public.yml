@@ -1,0 +1,6 @@
+# public schema
+sources:
+  - name: public
+    database: dev
+    tables:
+      - name: customers
