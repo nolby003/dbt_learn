@@ -3,8 +3,7 @@ dbt_postgres:
     dev:
       dbname: dbt-dev
       host: dbt-dev.c5qzh2ukly5h.ap-southeast-2.rds.amazonaws.com
-      # pass: Arjca7471
-      password: Arjca7471
+      password: '{{ env_var(''DBT_SQL_SERVER_PASS'') }}'
       port: 5432
       schema: public
       threads: 1
