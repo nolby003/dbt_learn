@@ -57,3 +57,45 @@ Happy modeling!
 [0m15:02:16.528154 [debug] [MainThread]: Command `dbt init` succeeded at 15:02:16.527928 after 191.32 seconds
 [0m15:02:16.528735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e12577790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e14f55400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e14e47040>]}
 [0m15:02:16.529388 [debug] [MainThread]: Flushing usage events
+[0m09:54:02.116410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd617b78670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61af05f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61af05100>]}
+
+
+============================== 09:54:02.123189 | 9b54e624-6834-4b30-bb1a-54fcd8447e74 ==============================
+[0m09:54:02.123189 [info ] [MainThread]: Running with dbt=1.7.4
+[0m09:54:02.123991 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/benjamin.nolan/PycharmProjects/dbtlearn/dbt_rs/dbt_rs', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug --config-dir', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:54:02.124842 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/benjamin.nolan/PycharmProjects/dbtlearn/dbt_rs/dbt_rs
+[0m09:54:02.135464 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.057806697, "process_user_time": 3.15567, "process_kernel_time": 0.696936, "process_mem_max_rss": "125251584", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:54:02.136331 [debug] [MainThread]: Command `dbt debug` succeeded at 09:54:02.136117 after 0.06 seconds
+[0m09:54:02.136886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd617b78670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61aef3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61aef3df0>]}
+[0m09:54:02.137432 [debug] [MainThread]: Flushing usage events
+[0m16:08:32.712906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc58d717c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc5b6268b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc5b6644c0>]}
+
+
+============================== 16:08:32.721214 | 182ae7e0-4863-44c1-babe-864b8e90cc15 ==============================
+[0m16:08:32.721214 [info ] [MainThread]: Running with dbt=1.7.4
+[0m16:08:32.722167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/benjamin.nolan/PycharmProjects/dbtlearn/', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:08:38.986623 [debug] [MainThread]: Starter project path: /Users/benjamin.nolan/opt/anaconda3/lib/python3.8/site-packages/dbt/include/starter_project
+[0m16:08:39.005265 [info ] [MainThread]: 
+Your new dbt project "dbt_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:08:39.005923 [info ] [MainThread]: Setting up your profile.
+[0m16:10:11.235669 [info ] [MainThread]: Profile dbt_postgres written to /Users/benjamin.nolan/PycharmProjects/dbtlearn/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:10:11.240175 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 98.6215, "process_user_time": 3.322031, "process_kernel_time": 0.536003, "process_mem_max_rss": "128430080", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:10:11.241055 [debug] [MainThread]: Command `dbt init` succeeded at 16:10:11.240830 after 98.62 seconds
+[0m16:10:11.241630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc58d717c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc5b852370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc5b6268b0>]}
+[0m16:10:11.242234 [debug] [MainThread]: Flushing usage events

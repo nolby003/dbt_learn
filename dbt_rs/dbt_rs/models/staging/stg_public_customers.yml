@@ -21,6 +21,6 @@ models:
 sources:
   - name: dev
     database: dev
-    schema: staging
+    schema: public
     tables:
       - name: customers

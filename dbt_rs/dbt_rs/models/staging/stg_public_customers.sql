@@ -4,4 +4,4 @@ with source as (
 
 select
     *
-from source as dim_customers
+from source as customers
