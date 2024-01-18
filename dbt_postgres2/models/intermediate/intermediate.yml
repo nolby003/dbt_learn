@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dbt_dev
+    tables:
+      - name: stg_customers
+      - name: stg_customer_address
+      - name: stg_customer_orders
+      - name: stg_products

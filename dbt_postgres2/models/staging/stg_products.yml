@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_products # table name to push
+    columns:
+      - name: product_id
+        tests:
+          - unique
+      - name: product_name
+      - name: product_category
+      - name: product_type
+      - name: product_sku
+      - name: product_model

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_customer_address # table name to push
+    columns:
+      - name: address_id
+        tests:
+          - unique
+      - name: customer_id
+      - name: address_num
+      - name: address_street
+      - name: address_street_type
+      - name: address_suburb
+      - name: address_city
+      - name: address_state
+      - name: address_pcode
+      - name: address_country

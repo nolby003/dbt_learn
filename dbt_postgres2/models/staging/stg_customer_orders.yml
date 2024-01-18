@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_customer_orders # table name to push
+    columns:
+      - name: order_id
+        tests:
+          - unique
+      - name: customer_id
+      - name: address_id
+      - name: product_id
+      - name: order_date
+      - name: order_status
+      - name: ship_date

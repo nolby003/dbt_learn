@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_customers # table name to push
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+      - name: customer_fname
+      - name: customer_lname
+      - name: customer_sal
+      - name: customer_email
+      - name: customer_address_id
