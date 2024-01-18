@@ -1,0 +1,41 @@
+dbt_postgres:
+  outputs:
+    dev:
+      dbname: dbt-dev
+      host: dbt-dev.c5qzh2ukly5h.ap-southeast-2.rds.amazonaws.com
+      password: '{{ env_var(''DBT_SQL_SERVER_PASS'') }}'
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: awsuser
+      connect_timeout: 20
+      keepalives_idle: 0
+  target: dev
+dbt_rs:
+  outputs:
+    dev:
+      connect_timeout: 20
+      dbname: dev
+      host: redshift-cluster-dbt2.cm1dlmwaxgq3.ap-southeast-2.redshift.amazonaws.com
+      keepalives_idle: 0
+      password: '{{ env_var(''DBT_REDSHIFT_PASSWORD'') }}'
+      port: 5439
+      schema: public
+      threads: 1
+      type: redshift
+      user: awsuser
+  target: dev
+lessons2:
+  outputs:
+    dev:
+      dataset: dbt_test
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: flash-arbor-340803
+      threads: 60
+      type: bigquery
+  target: dev
