@@ -1,0 +1,21 @@
+version: 2
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+  - name: stg_customer_address
+    columns:
+      - name: address_id
+  - name: stg_customer_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+  - name: int_customer_orders

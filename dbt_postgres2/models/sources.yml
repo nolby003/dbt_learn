@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: source
+    database: dbt_dev
+    loader: postgres
+    schema: source
+    tables:
+      - identifier: dim_customers
+        name: dim_customers
+      - identifier: dim_customer_address
+        name: dim_customer_address
+      - identifier: dim_customer_orders
+        name: dim_customer_orders
+      - identifier: dim_products
+        name: dim_products
+  - name: staging
+    database: dbt_dev
+    loader: postgres
+    schema: staging
+    tables:
+      - identifier: stg_customers
+        name: stg_customers
+      - identifier: stg_customer_address
+        name: stg_customer_address
+      - identifier: stg_customer_orders
+        name: stg_customer_orders
+      - identifier: stg_products
+        name: stg_products
+  - name: intermediate
+    database: dbt_dev
+    loader: postgres
+    schema: intermediate
+    tables:
+      - identifier: int_customer_orders
+        name: int_customer_orders
