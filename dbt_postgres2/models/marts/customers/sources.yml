@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: source
+    database: postgres
+    loader: postgres
+    schema: source
+    tables:
+      - identifier: dim_customers
+        name: dim_customers
+      - identifier: dim_customer_shipping
+        name: dim_customer_shipping
+  - name: staging
+    database: postgres
+    loader: postgres
+    schema: staging
+    tables:
+      - identifier: stg_customers
+        name: stg_customers
+      - identifier: stg_customer_shipping
+        name: stg_customer_shipping
