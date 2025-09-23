@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging
+    database: postgres
+    tables:
+      - name: stg_customers
+      - name: stg_customer_shipping

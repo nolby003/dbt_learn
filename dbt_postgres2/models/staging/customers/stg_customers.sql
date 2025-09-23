@@ -1,13 +1,8 @@
-with
-    source
-    as
-    (
-        select *
-        from {{ source
-    
-    
-    ('public', 'dim_customers') }}
-)
+{{ config(
+    materialized = 'incremental',
+    schema = 'staging'
+) }}
 
-select *
-from source
+with source as (select * from mart_customers)
+
+select * from source

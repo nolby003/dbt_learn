@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: public
+    database: postgres
+    tables:
+      - name: mart_customers
+      - name: mart_customer_shipping
